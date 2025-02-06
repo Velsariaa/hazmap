@@ -20,9 +20,35 @@ class LegendsPage extends StatelessWidget {
           },
         ),
       ),
-      drawer: const navbar(), // Add NavigationBar
-      body: const Center(
-        child: Text('This is the Legends Page!'),
+      drawer: const navbar(),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('lib/assets/legendbg.png'), 
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.95,
+            height: MediaQuery.of(context).size.height * 0.8,
+            color: Color.fromARGB(255, 204, 204, 204).withOpacity(0.27),
+            child: const Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  'Legends',
+                  style: TextStyle(
+                    fontSize: 34,
+                    color: Colors.red,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
