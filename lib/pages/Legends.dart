@@ -55,227 +55,78 @@ class LegendsPage extends StatelessWidget {
                         crossAxisSpacing: 10,
                         mainAxisSpacing: 10,
                         children: List.generate(6, (index) {
-                          if (index == 1) {
-                            return Container(
-                              color: Colors.white.withOpacity(0),
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 100 * 0.7,
-                                        height: 100 * 0.7,
-                                        child: Image.asset(
-                                          'lib/assets/brokenhazard.png',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      Expanded(
-                                        child: Transform.translate(
-                                          offset: const Offset(-17,
-                                              0), 
-                                          child: const Text(
-                                            'Broken',
-                                            style: TextStyle(
-                                              fontSize: 17,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                            overflow: TextOverflow.ellipsis,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'This is Broken Hazard.',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            );
-                          } else if (index == 2) {
-                            return Container(
-                              color: Colors.white.withOpacity(0),
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 50 * 0.3,
-                                        height: 50 * 0.3,
-                                        child: Image.asset(
-                                          'lib/assets/brokenhazard.png',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      const Expanded(
-                                        child: Text(
-                                          'Flood',
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          overflow: TextOverflow.ellipsis,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'This is Flood Hazard.',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            );
-                          } else if (index == 3) {
-                            return Container(
-                              color: Colors.white.withOpacity(0),
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 50 * 0.3,
-                                        height: 50 * 0.3,
-                                        child: Image.asset(
-                                          'lib/assets/brokenhazard.png',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      const Expanded(
-                                        child: Text(
-                                          'Fire',
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          overflow: TextOverflow.ellipsis,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'This is Fire Hazard.',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            );
-                          } else if (index == 4) {
-                            return Container(
-                              color: Colors.white.withOpacity(0),
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 50 * 0.3,
-                                        height: 50 * 0.3,
-                                        child: Image.asset(
-                                          'lib/assets/brokenhazard.png',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      const Expanded(
-                                        child: Text(
-                                          'Landslide',
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          overflow: TextOverflow.ellipsis,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'This is Landslide Hazard.',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            );
-                          } else if (index == 5) {
-                            return Container(
-                              color: Colors.white.withOpacity(0),
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 50 * 0.3,
-                                        height: 50 * 0.3,
-                                        child: Image.asset(
-                                          'lib/assets/brokenhazard.png',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      const Expanded(
-                                        child: Text(
-                                          'Tsunami',
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          overflow: TextOverflow.ellipsis,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'This is Tsunami Hazard.',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            );
-                          } else {
-                            return Container(
-                              color: Colors.white.withOpacity(0),
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 50 * 0.3,
-                                        height: 50 * 0.3,
-                                        child: Image.asset(
-                                          'lib/assets/earthquakehazard.png',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      const Expanded(
-                                        child: Text(
-                                          'Earthquake',
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          overflow: TextOverflow.ellipsis,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'This is a description of the earthquake hazard.',
-                                    style: TextStyle(fontSize: 12),
-                                  ),
-                                ],
-                              ),
-                            );
+                          String imagePath;
+                          String title;
+                          String description;
+
+                          switch (index) {
+                            case 1:
+                              imagePath = 'lib/assets/brokenhazard.png';
+                              title = 'Broken';
+                              description = 'This is Broken Hazard.';
+                              break;
+                            case 2:
+                              imagePath = 'lib/assets/brokenhazard.png';
+                              title = 'Flood';
+                              description = 'This is Flood Hazard.';
+                              break;
+                            case 3:
+                              imagePath = 'lib/assets/brokenhazard.png';
+                              title = 'Fire';
+                              description = 'This is Fire Hazard.';
+                              break;
+                            case 4:
+                              imagePath = 'lib/assets/brokenhazard.png';
+                              title = 'Landslide';
+                              description = 'This is Landslide Hazard.';
+                              break;
+                            case 5:
+                              imagePath = 'lib/assets/brokenhazard.png';
+                              title = 'Tsunami';
+                              description = 'This is Tsunami Hazard.';
+                              break;
+                            default:
+                              imagePath = 'lib/assets/earthquakehazard.png';
+                              title = 'Earthquake';
+                              description = 'This is a description of the earthquake hazard.';
                           }
+
+                          return Container(
+                            color: Colors.white.withOpacity(0.8),
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 100 * 0.61,
+                                      height: 100 * 0.61,
+                                      child: Image.asset(imagePath),
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Expanded(
+                                      child: Transform.translate(
+                                        offset: const Offset(-17, 0),
+                                        child: Text(
+                                          title,
+                                          style: const TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                          overflow: TextOverflow.ellipsis,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  description,
+                                  style: const TextStyle(fontSize: 12),
+                                ),
+                              ],
+                            ),
+                          );
                         }),
                       ),
                     ),
