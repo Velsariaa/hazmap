@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'components/NavigationBar.dart'; 
+import '../components/NavigationBar.dart'; 
 
-class LandingPage extends StatelessWidget {
-  const LandingPage({super.key});
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Landing Page'),
+        title: const Text('About Page'),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
@@ -20,15 +20,9 @@ class LandingPage extends StatelessWidget {
           },
         ),
       ),
-      drawer: const navbar(), 
+      drawer: const navbar(), // Add NavigationBar
       body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Welcome to the Landing Page!'),
-            SizedBox(height: 20)
-          ],
-        ),
+        child: Text('This is the About Page!'),
       ),
     );
   }

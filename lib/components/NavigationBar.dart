@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../LandingPage.dart';
-import '../About.dart';
+import '../pages/LandingPage.dart';
+import '../pages/About.dart';
+import '../pages/Legends.dart';
 
 class navbar extends StatelessWidget {
   const navbar({super.key});
@@ -34,6 +35,16 @@ class navbar extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => AboutPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Legends Page'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LegendsPage()),
               );
             },
           ),
