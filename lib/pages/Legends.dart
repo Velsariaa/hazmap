@@ -36,7 +36,7 @@ class LegendsPage extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.95,
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 204, 204, 204).withOpacity(0.27),
+                    color: const Color.fromARGB(255, 226, 226, 226).withOpacity(0.27),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -60,7 +60,7 @@ class LegendsPage extends StatelessWidget {
                               crossAxisCount: 2,
                               crossAxisSpacing: 10,
                               mainAxisSpacing: 10,
-                              childAspectRatio: 0.9, // Adjust this for better layout
+                              childAspectRatio: 0.85, // Adjust this for better layout
                             ),
                             itemCount: 6,
                             itemBuilder: (context, index) {
@@ -72,38 +72,33 @@ class LegendsPage extends StatelessWidget {
                                 case 1:
                                   imagePath = 'lib/assets/brokenhazard.png';
                                   title = 'Broken';
-                                  description = 'This is Broken Hazard.';
+                                  description = 'Broken items can lead to sharp edges, spills, or other hazards depending on the nature of the object. \nEx: shattered glass, broken tools, or fractured furniture';
                                   break;
                                 case 2:
                                   imagePath = 'lib/assets/brokenhazard.png';
                                   title = 'Laboratory Apparatus';
-                                  description = 'This is Flood Hazard.';
+                                  description = 'Laboratory equipment can pose serious risks if damaged or mishandled, such as chemical exposure or burns. \nEx: broken glassware, faulty instruments, cracked beakers';
                                   break;
                                 case 3:
                                   imagePath = 'lib/assets/brokenhazard.png';
                                   title = 'Falling Objects';
-                                  description = 'This is Fire Hazard.';
-                                  break;
-                                case 4:
-                                  imagePath = 'lib/assets/brokenhazard.png';
-                                  title = 'Flammable';
-                                  description = 'This is Landslide Hazard.';
+                                  description = 'Falling objects can lead to serious injury or death if not properly secured. Flammable materials can catch fire easily and spread quickly, causing serious damage or injury. \nEx: gasoline, solvents, and paper products';
                                   break;
                                 case 5:
                                   imagePath = 'lib/assets/brokenhazard.png';
                                   title = 'Exposed Electrical Wirings';
-                                  description = 'This is Tsunami Hazard.';
+                                  description = 'Exposed wiring presents a significant risk of electric shock, fires, or electrocution if touched or damaged. \nEx: frayed wires, faulty connections';
                                   break;
                                 default:
                                   imagePath = 'lib/assets/earthquakehazard.png';
                                   title = 'Earthquake';
                                   description =
-                                      'Earthquakes cause the ground to shake, potentially leading to building collapses, landslides, and infrastructure damage. Ex: cracks in walls or floors and the shifting of heavy objects.';
+                                      'Earthquakes cause the ground to shake, potentially leading to building collapses, landslides, and infrastructure damage. \nEx: cracks in walls or floors and the shifting of heavy objects.';
                               }
 
                               return Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.8),
+                                  color: Colors.white.withOpacity(0),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 padding: const EdgeInsets.all(8.0),
