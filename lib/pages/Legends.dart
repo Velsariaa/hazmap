@@ -28,12 +28,14 @@ class LegendsPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Center(
+        child: Align(
+          alignment: Alignment.topCenter,
           child: SingleChildScrollView(
             child: Column(
               children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 0.95,
+                  height: MediaQuery.of(context).size.height * 0.95,
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 226, 226, 226).withOpacity(0.27),
@@ -107,10 +109,13 @@ class LegendsPage extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        SizedBox(
-                                          width: 60,
-                                          height: 60,
-                                          child: Image.asset(imagePath),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: SizedBox(
+                                            width: 60,
+                                            height: 60,
+                                            child: Image.asset(imagePath),
+                                          ),
                                         ),
                                         const SizedBox(width: 10),
                                         Expanded(
