@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../components/NavigationBar.dart'; 
+import '../components/NavigationBar.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -20,15 +20,48 @@ class LandingPage extends StatelessWidget {
           },
         ),
       ),
-      drawer: const navbar(), 
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Welcome to the Landing Page!'),
-            SizedBox(height: 20)
-          ],
-        ),
+      drawer: const navbar(),
+      body: Stack(
+        children: [
+          // Background image covering the entire screen
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('lib/assets/loading-bg.png'), // Ensure the image exists in your assets
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Column(
+            children: [
+              // Logo at the middle top
+              const SizedBox(height: 100),
+              Center(
+                child: Image.asset(
+                  'lib/assets/hazLogo.png', // Ensure the logo image exists in your assets
+                  width: 150,
+                  height: 150,
+                ),
+              ),
+              const Spacer(),
+              // "Get Started" button at the middle bottom
+              Center(
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Define navigation or action here
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  child: const Text('Get Started'),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                    textStyle: const TextStyle(fontSize: 18),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 50),
+            ],
+          ),
+        ],
       ),
     );
   }
