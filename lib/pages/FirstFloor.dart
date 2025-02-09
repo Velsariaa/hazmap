@@ -32,7 +32,7 @@ class FirstFloorPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-            // Expanded Map Container to fit the screen without overflow
+           
             Expanded(
               child: Center(
                 child: AspectRatio(
@@ -44,7 +44,7 @@ class FirstFloorPage extends StatelessWidget {
 
                       return Stack(
                         children: [
-                          // Background map image
+                          
                           Positioned.fill(
                             child: Container(
                               decoration: BoxDecoration(
@@ -59,10 +59,11 @@ class FirstFloorPage extends StatelessWidget {
                             ),
                           ),
 
-                          // Pavilion Button (Scaled)
                           Positioned(
-                            left: containerWidth * 0.27, // Adjust position as needed
-                            top: containerHeight * 0.41, // Adjust position as needed
+                            left: containerWidth *
+                                0.27, 
+                            top: containerHeight *
+                                0.543, 
                             child: GestureDetector(
                               onTap: () {
                                 showDialog(
@@ -84,11 +85,14 @@ class FirstFloorPage extends StatelessWidget {
                                   },
                                 );
                               },
-                              child: Image.asset(
-                                'lib/assets/pavillionbtn.png',
+                              child: SizedBox(
                                 width: containerWidth * 0.47,
-                                height: containerHeight * 0.38,
-                                fit: BoxFit.contain,
+                                height: containerHeight * 0.13,
+                                child: Image.asset(
+                                  'lib/assets/pavillionbtn.png',
+                                  fit: BoxFit
+                                      .contain, 
+                                ),
                               ),
                             ),
                           ),
@@ -104,7 +108,7 @@ class FirstFloorPage extends StatelessWidget {
 
             // Navigation buttons
             Padding(
-              padding: const EdgeInsets.only(bottom: 10), // Prevents overflow
+              padding: const EdgeInsets.only(bottom: 10), 
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
