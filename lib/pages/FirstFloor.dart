@@ -30,78 +30,82 @@ class FirstFloorPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Map container with fixed aspect ratio
-              AspectRatio(
-                aspectRatio: 9 / 16, // Adjusted aspect ratio
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    double containerWidth = constraints.maxWidth;
-                    double containerHeight = constraints.maxHeight;
+        child: Column(
+          children: [
+            // Expanded Map Container to fit the screen without overflow
+            Expanded(
+              child: Center(
+                child: AspectRatio(
+                  aspectRatio: 9 / 16,
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      double containerWidth = constraints.maxWidth;
+                      double containerHeight = constraints.maxHeight;
 
-                    return Stack(
-                      children: [
-                        // Background map image
-                        Positioned.fill(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 226, 226, 226)
-                                  .withOpacity(0.27),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Image.asset(
-                              'lib/assets/groundsevacplan.png',
-                              fit: BoxFit.contain,
+                      return Stack(
+                        children: [
+                          // Background map image
+                          Positioned.fill(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 226, 226, 226)
+                                    .withOpacity(0.27),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Image.asset(
+                                'lib/assets/groundsevacplan.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                        ),
 
-                        // Pavilion Button (Scaled)
-                        Positioned(
-                          left: containerWidth * 0.27, // Adjust position as needed
-                          top: containerHeight * 0.41, // Adjust position as needed
-                          child: GestureDetector(
-                            onTap: () {
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return AlertDialog(
-                                    title: const Text('Pavilion Info'),
-                                    content: const Text(
-                                        'Details about the Pavilion component.'),
-                                    actions: [
-                                      TextButton(
-                                        onPressed: () {
-                                          Navigator.of(context).pop();
-                                        },
-                                        child: const Text('Close'),
-                                      ),
-                                    ],
-                                  );
-                                },
-                              );
-                            },
-                            child: Image.asset(
-                              'lib/assets/pavillionbtn.png',
-                              width: containerWidth * 0.47, 
-                              height: containerHeight * 0.38, 
-                              fit: BoxFit.contain,
+                          // Pavilion Button (Scaled)
+                          Positioned(
+                            left: containerWidth * 0.27, // Adjust position as needed
+                            top: containerHeight * 0.41, // Adjust position as needed
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: Image.asset(
+                                'lib/assets/pavillionbtn.png',
+                                width: containerWidth * 0.47,
+                                height: containerHeight * 0.38,
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
-                    );
-                  },
+                        ],
+                      );
+                    },
+                  ),
                 ),
               ),
+            ),
 
-              const SizedBox(height: 20),
+            const SizedBox(height: 10),
 
-              // Navigation buttons
-              Row(
+            // Navigation buttons
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10), // Prevents overflow
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
@@ -127,8 +131,8 @@ class FirstFloorPage extends StatelessWidget {
                   ),
                 ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
