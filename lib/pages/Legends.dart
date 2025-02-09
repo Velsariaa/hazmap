@@ -29,9 +29,10 @@ class LegendsPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Center(
+        child: Align(
+          alignment: Alignment.topCenter, // Align to the top center
           child: AspectRatio(
-            aspectRatio: 9 / 16, // Ensures the container maintains a 9:16 ratio
+            aspectRatio: 9 / 17, // Ensures the container maintains a 9:16 ratio
             child: Container(
               width: MediaQuery.of(context).size.width * 0.95,
               padding: const EdgeInsets.all(8.0),
@@ -63,7 +64,7 @@ class LegendsPage extends StatelessWidget {
                             crossAxisCount: 2,
                             crossAxisSpacing: 10,
                             mainAxisSpacing: 10,
-                            childAspectRatio: 0.65,
+                            childAspectRatio: 0.68,
                           ),
                           itemCount: 6,
                           itemBuilder: (context, index) {
@@ -105,7 +106,7 @@ class LegendsPage extends StatelessWidget {
 
                             return Container(
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0),
+                                color: Colors.white.withOpacity(0.8),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               padding: const EdgeInsets.all(8.0),
