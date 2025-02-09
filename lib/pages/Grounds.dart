@@ -36,11 +36,10 @@ class GroundsPage extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(12.0),
             child: Align(
               alignment: Alignment.topCenter,
               child: Container(
-                
                 padding: const EdgeInsets.only(top: 12.0, bottom: 12.0),
                 child: Image.asset('lib/assets/groundsevacplan.png'),
               ),
