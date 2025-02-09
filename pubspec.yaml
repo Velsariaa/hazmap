@@ -64,6 +64,15 @@ flutter:
     - lib/assets/abtpagetext.png
     - lib/assets/loading-bg.png
     - lib/assets/hazLogo.png
+    - lib/assets/mainPageBg.jpg
+    - lib/assets/grounds.jpg
+    - lib/assets/1st_floor.jpg
+    - lib/assets/2nd_floor.jpg
+    - lib/assets/3rd_floor.jpg
+    - lib/assets/4th_floor.jpg
+    - lib/assets/5th_floor.jpg
+    - lib/assets/6th_floor.jpg
+    - lib/assets/gymnasium.jpg
  
 
 

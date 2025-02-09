@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/NavigationBar.dart';
+import '../pages/Home.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
