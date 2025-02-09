@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../components/NavigationBar.dart'; 
+import '../components/NavigationBar.dart';
+import 'FirstFloor.dart'; // Import the required page
+import 'Home.dart'; // Import homepage if needed
 
 class GroundsPage extends StatelessWidget {
   const GroundsPage({super.key});
@@ -28,22 +30,53 @@ class GroundsPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Container(
-          width: MediaQuery.of(context).size.width * 0.95,
-          height: MediaQuery.of(context).size.height * 0.95,
-          decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 226, 226, 226).withOpacity(0.27),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                padding: const EdgeInsets.only(top: 12.0, bottom: 12.0),
-                child: Image.asset('lib/assets/groundsevacplan.png'),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.7,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 226, 226, 226).withOpacity(0.27),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Center(
+                    child: Image.asset(
+                      'lib/assets/groundsevacplan.png',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
               ),
-            ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.arrow_left, size: 40),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const HomePage()),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 50),
+                  IconButton(
+                    icon: const Icon(Icons.arrow_right, size: 40),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const FirstFloorPage()),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
