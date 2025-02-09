@@ -34,69 +34,66 @@ class FirstFloorPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Stack(
-                alignment: Alignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 226, 226, 226)
-                          .withOpacity(0.27),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: IntrinsicWidth(
-                        child: IntrinsicHeight(
-                          child: Center(
-                            child: Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                Image.asset(
-                                  'lib/assets/groundsevacplan.png',
-                                  fit: BoxFit.contain,
-                                ),
-                                Positioned(
-                                  top: 100, // Adjust as needed
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      showDialog(
-                                        context: context,
-                                        builder: (BuildContext context) {
-                                          return AlertDialog(
-                                            title: const Text('Pavilion Info'),
-                                            content: const Text(
-                                                'Details about the Pavilion component.'),
-                                            actions: [
-                                              TextButton(
-                                                onPressed: () {
-                                                  Navigator.of(context).pop();
-                                                },
-                                                child: const Text('Close'),
-                                              ),
-                                            ],
-                                          );
-                                        },
-                                      );
-                                    },
-                                    child: Image.asset(
-                                      'lib/assets/pavillionbtn.png',
-                                      fit: BoxFit.contain,
-                                      width:
-                                          60, // Set a reasonable default size
-                                      height: 60,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+              // Map container with fixed aspect ratio
+              AspectRatio(
+                aspectRatio: 9 / 16, // Adjust aspect ratio based on your image
+                child: Stack(
+                  children: [
+                    // Background map image
+                    Positioned.fill(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 226, 226, 226)
+                              .withOpacity(0.27),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'lib/assets/groundsevacplan.png',
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
-                  )
-                ],
+
+                    // Pavilion Button (Positioned based on percentage)
+                    Positioned(
+                      left: MediaQuery.of(context).size.width * 0.3, // Adjust as needed
+                      top: MediaQuery.of(context).size.height * 0.2, // Adjust as needed
+                      child: GestureDetector(
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                title: const Text('Pavilion Info'),
+                                content: const Text(
+                                    'Details about the Pavilion component.'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: const Text('Close'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                        },
+                        child: Image.asset(
+                          'lib/assets/pavillionbtn.png',
+                          width: 60, // Fixed size for button
+                          height: 60,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
+
               const SizedBox(height: 20),
+
+              // Navigation buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
