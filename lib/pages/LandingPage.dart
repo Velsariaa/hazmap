@@ -1,8 +1,28 @@
 import 'package:flutter/material.dart';
 import '../components/NavigationBar.dart';
 
-class LandingPage extends StatelessWidget {
+class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
+
+  @override
+  State<LandingPage> createState() => _LandingPageState();
+}
+
+class _LandingPageState extends State<LandingPage> {
+  bool _isLoading = false;
+
+  void _navigateToHome() {
+    setState(() {
+      _isLoading = true;
+    });
+
+    Future.delayed(const Duration(seconds: 2), () {
+      setState(() {
+        _isLoading = false;
+      });
+      Navigator.pushNamed(context, '/home');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,40 +43,46 @@ class LandingPage extends StatelessWidget {
       drawer: const navbar(),
       body: Stack(
         children: [
-          // Background image covering the entire screen
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('lib/assets/loading-bg.png'), // Ensure the image exists in your assets
+                image: AssetImage('lib/assets/loading-bg.png'),
                 fit: BoxFit.cover,
               ),
             ),
           ),
           Column(
             children: [
-              // Logo at the middle top
               const SizedBox(height: 100),
               Center(
                 child: Image.asset(
-                  'lib/assets/hazLogo.png', // Ensure the logo image exists in your assets
-                  width: 150,
-                  height: 150,
+                  'lib/assets/hazLogo.png',
+                  width: 300,
+                  height: 300,
                 ),
               ),
               const Spacer(),
-              // "Get Started" button at the middle bottom
               Center(
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Define navigation or action here
-                    Navigator.pushNamed(context, '/home');
-                  },
-                  child: const Text('Get Started'),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                    textStyle: const TextStyle(fontSize: 18),
-                  ),
-                ),
+                child: _isLoading
+                    ? const CircularProgressIndicator()
+                    : ElevatedButton(
+                        onPressed: _navigateToHome,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF292746),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                        ),
+                        child: const Text(
+                          'Get Started',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
               ),
               const SizedBox(height: 50),
             ],
