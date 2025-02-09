@@ -96,6 +96,44 @@ class FirstFloorPage extends StatelessWidget {
                               ),
                             ),
                           ),
+
+                          Positioned(
+                            left: containerWidth *
+                                0.17, 
+                            top: containerHeight *
+                                0.136, 
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.15,
+                                height: containerHeight * 0.266,
+                                child: Image.asset(
+                                  'lib/assets/annexbldgbtn.png',
+                                  fit: BoxFit
+                                      .contain, 
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       );
                     },
