@@ -55,7 +55,7 @@ class GroundsPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: MediaQuery.of(context).size.height * 0.3, // Adjust the position as needed
+                    top: MediaQuery.of(context).size.height * 0.2, // Adjust the position as needed
                     child: GestureDetector(
                       onTap: () {
                         showDialog(
@@ -78,7 +78,33 @@ class GroundsPage extends StatelessWidget {
                       },
                       child: Image.asset(
                         'lib/assets/pavillion.png',
-                        
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: MediaQuery.of(context).size.height * 0.2,
+                    child: GestureDetector(
+                      onTap: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Main Building Info'),
+                              content: const Text('Details about the Main Building component.'),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: const Text('Close'),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      },
+                      child: Image.asset(
+                        'lib/assets/mainbldg.png',
                       ),
                     ),
                   ),
