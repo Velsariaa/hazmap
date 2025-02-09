@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../pages/LandingPage.dart';
 import '../pages/About.dart';
 import '../pages/Legends.dart';
+import '../pages/Home.dart';
 
 class navbar extends StatelessWidget {
   const navbar({super.key});
@@ -12,24 +13,33 @@ class navbar extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
+          Container(
+            color: const Color(0xFF292746),
+            padding: const EdgeInsets.all(16),
+            child: const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'HazMap',
+                style: TextStyle(
+                  fontSize: 16, // Smaller font size
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
             ),
-            child: Text('Menu'),
           ),
           ListTile(
-            title: const Text('Landing Page'),
+            title: const Text('Home'),
             onTap: () {
               Navigator.pop(context); // Close the drawer
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => LandingPage()),
+                MaterialPageRoute(builder: (context) => HomePage()),
               );
             },
           ),
           ListTile(
-            title: const Text('About Page'),
+            title: const Text('About'),
             onTap: () {
               Navigator.pop(context); // Close the drawer
               Navigator.push(
@@ -39,7 +49,7 @@ class navbar extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('Legends Page'),
+            title: const Text('Legends'),
             onTap: () {
               Navigator.pop(context); // Close the drawer
               Navigator.push(
