@@ -23,6 +23,7 @@ class FirstFloorPage extends StatelessWidget {
       ),
       drawer: const navbar(),
       body: Container(
+        padding: const EdgeInsets.all(12.0),
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('lib/assets/legendbg.png'),
