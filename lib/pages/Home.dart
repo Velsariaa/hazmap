@@ -49,7 +49,13 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        backgroundColor: const Color(0xFF292746),
+         title: Center(
+            child: Image.asset(
+            'lib/assets/hazHeader.png',
+            height: 40,
+            ),
+        ),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
@@ -63,8 +69,8 @@ class HomePage extends StatelessWidget {
       ),
       drawer: const navbar(),
       body: Container(
-        decoration: BoxDecoration(
-          image: const DecorationImage(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
             image: AssetImage('lib/assets/mainPageBg.jpg'),
             fit: BoxFit.cover,
           ),
