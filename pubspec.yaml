@@ -79,6 +79,12 @@ flutter:
     - lib/assets/pavillionbtn.png 
     - lib/assets/pavillionbtn2.png 
     - lib/assets/annexbldgbtn.png 
+    - lib/assets/4thfloorevacplan.png 
+    - lib/assets/electricalRoom.png 
+    - lib/assets/genSciLab.png 
+    - lib/assets/physicsLab.png 
+    - lib/assets/chemistryLab.png 
+    - lib/assets/bioLab.png 
     
 
     
