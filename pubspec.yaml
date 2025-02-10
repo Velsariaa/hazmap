@@ -87,7 +87,11 @@ flutter:
     - lib/assets/bioLab.png 
     - lib/assets/hazHeader.png 
     - lib/assets/2ndfloorevacplan.png 
-    - lib/assets/3rdfloorevacplan.png 
+    - lib/assets/exposedelectricalhazard.png 
+    - lib/assets/fallinghazard.png 
+    - lib/assets/flammablehazard.png 
+    - lib/assets/laboratoryhazard.png 
+    
     
 
     
