@@ -8,7 +8,13 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About Page'),
+        backgroundColor: const Color(0xFF292746),
+         title: Center(
+          child: Image.asset(
+            'lib/assets/hazLogo.png',
+            height: 40,
+          ),
+        ),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
