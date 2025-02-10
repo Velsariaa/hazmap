@@ -86,6 +86,8 @@ flutter:
     - lib/assets/chemistryLab.png 
     - lib/assets/bioLab.png 
     - lib/assets/hazHeader.png 
+    - lib/assets/2ndfloorevacplan.png 
+    - lib/assets/3rdfloorevacplan.png 
     
 
     

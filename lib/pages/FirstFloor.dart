@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/NavigationBar.dart';
-import 'Home.dart'; // Import homepage if needed
+import 'Home.dart'; 
 
 class FirstFloorPage extends StatelessWidget {
   const FirstFloorPage({super.key});
@@ -53,87 +53,87 @@ class FirstFloorPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Image.asset(
-                                'lib/assets/groundsevacplan.png',
+                                'lib/assets/1stfloorevacplan.png',
                                 fit: BoxFit.contain,
                               ),
                             ),
                           ),
 
-                          Positioned(
-                            left: containerWidth *
-                                0.27, 
-                            top: containerHeight *
-                                0.543, 
-                            child: GestureDetector(
-                              onTap: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return AlertDialog(
-                                      title: const Text('Pavilion Info'),
-                                      content: const Text(
-                                          'Details about the Pavilion component.'),
-                                      actions: [
-                                        TextButton(
-                                          onPressed: () {
-                                            Navigator.of(context).pop();
-                                          },
-                                          child: const Text('Close'),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                );
-                              },
-                              child: SizedBox(
-                                width: containerWidth * 0.47,
-                                height: containerHeight * 0.13,
-                                child: Image.asset(
-                                  'lib/assets/pavillionbtn.png',
-                                  fit: BoxFit
-                                      .contain, 
-                                ),
-                              ),
-                            ),
-                          ),
+                          // Positioned(
+                          //   left: containerWidth *
+                          //       0.27, 
+                          //   top: containerHeight *
+                          //       0.543, 
+                          //   child: GestureDetector(
+                          //     onTap: () {
+                          //       showDialog(
+                          //         context: context,
+                          //         builder: (BuildContext context) {
+                          //           return AlertDialog(
+                          //             title: const Text('Pavilion Info'),
+                          //             content: const Text(
+                          //                 'Details about the Pavilion component.'),
+                          //             actions: [
+                          //               TextButton(
+                          //                 onPressed: () {
+                          //                   Navigator.of(context).pop();
+                          //                 },
+                          //                 child: const Text('Close'),
+                          //               ),
+                          //             ],
+                          //           );
+                          //         },
+                          //       );
+                          //     },
+                          //     child: SizedBox(
+                          //       width: containerWidth * 0.47,
+                          //       height: containerHeight * 0.13,
+                          //       child: Image.asset(
+                          //         'lib/assets/pavillionbtn.png',
+                          //         fit: BoxFit
+                          //             .contain, 
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
 
-                          Positioned(
-                            left: containerWidth *
-                                0.17, 
-                            top: containerHeight *
-                                0.136, 
-                            child: GestureDetector(
-                              onTap: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return AlertDialog(
-                                      title: const Text('Pavilion Info'),
-                                      content: const Text(
-                                          'Details about the Pavilion component.'),
-                                      actions: [
-                                        TextButton(
-                                          onPressed: () {
-                                            Navigator.of(context).pop();
-                                          },
-                                          child: const Text('Close'),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                );
-                              },
-                              child: SizedBox(
-                                width: containerWidth * 0.15,
-                                height: containerHeight * 0.266,
-                                child: Image.asset(
-                                  'lib/assets/annexbldgbtn.png',
-                                  fit: BoxFit
-                                      .contain, 
-                                ),
-                              ),
-                            ),
-                          ),
+                          // Positioned(
+                          //   left: containerWidth *
+                          //       0.17, 
+                          //   top: containerHeight *
+                          //       0.136, 
+                          //   child: GestureDetector(
+                          //     onTap: () {
+                          //       showDialog(
+                          //         context: context,
+                          //         builder: (BuildContext context) {
+                          //           return AlertDialog(
+                          //             title: const Text('Pavilion Info'),
+                          //             content: const Text(
+                          //                 'Details about the Pavilion component.'),
+                          //             actions: [
+                          //               TextButton(
+                          //                 onPressed: () {
+                          //                   Navigator.of(context).pop();
+                          //                 },
+                          //                 child: const Text('Close'),
+                          //               ),
+                          //             ],
+                          //           );
+                          //         },
+                          //       );
+                          //     },
+                          //     child: SizedBox(
+                          //       width: containerWidth * 0.15,
+                          //       height: containerHeight * 0.266,
+                          //       child: Image.asset(
+                          //         'lib/assets/annexbldgbtn.png',
+                          //         fit: BoxFit
+                          //             .contain, 
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
                         ],
                       );
                     },
