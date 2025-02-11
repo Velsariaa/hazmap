@@ -58,7 +58,7 @@ class GroundsPage extends StatelessWidget {
                             ),
                           ),
                           Positioned(
-                            left: containerWidth * 0.38,
+                            left: containerWidth * 0.375,
                             top: containerHeight * 0.305,
                             child: GestureDetector(
                                 onTap: () {
