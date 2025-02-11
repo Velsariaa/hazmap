@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../components/NavigationBar.dart';
 import 'FirstFloor.dart';
-import 'Home.dart'; 
+import 'Home.dart';
 
 class GroundsPage extends StatelessWidget {
   const GroundsPage({super.key});
@@ -33,7 +33,6 @@ class GroundsPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-           
             Expanded(
               child: Center(
                 child: AspectRatio(
@@ -45,7 +44,6 @@ class GroundsPage extends StatelessWidget {
 
                       return Stack(
                         children: [
-                          
                           Positioned.fill(
                             child: Container(
                               decoration: BoxDecoration(
@@ -59,50 +57,42 @@ class GroundsPage extends StatelessWidget {
                               ),
                             ),
                           ),
-
                           Positioned(
-                            left: containerWidth *
-                                0.27, 
-                            top: containerHeight *
-                                0.543, 
+                            left: containerWidth * 0.38,
+                            top: containerHeight * 0.305,
                             child: GestureDetector(
-                              onTap: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return AlertDialog(
-                                      title: const Text('Pavilion Info'),
-                                      content: const Text(
-                                          'Details about the Pavilion component.'),
-                                      actions: [
-                                        TextButton(
-                                          onPressed: () {
-                                            Navigator.of(context).pop();
-                                          },
-                                          child: const Text('Close'),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                );
-                              },
-                              child: SizedBox(
-                                width: containerWidth * 0.47,
-                                height: containerHeight * 0.13,
-                                child: Image.asset(
-                                  'lib/assets/pavillionbtn.png',
-                                  fit: BoxFit
-                                      .contain, 
-                                ),
-                              ),
-                            ),
+                                onTap: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        title: const Text('Pavilion Info'),
+                                        content: const Text(
+                                            'Details about the Pavilion component.'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () {
+                                              Navigator.of(context).pop();
+                                            },
+                                            child: const Text('Close'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                },
+                                child: SizedBox(
+                                  width: containerWidth * 0.053,
+                                  height: containerHeight * 0.043,
+                                  child: Image.asset(
+                                    'lib/assets/legend_fallingobjects.png',
+                                    fit: BoxFit.contain,
+                                  ),
+                                )),
                           ),
-
                           Positioned(
-                            left: containerWidth *
-                                0.17, 
-                            top: containerHeight *
-                                0.136, 
+                            left: containerWidth * 0.44,
+                            top: containerHeight * 0.305,
                             child: GestureDetector(
                               onTap: () {
                                 showDialog(
@@ -111,7 +101,7 @@ class GroundsPage extends StatelessWidget {
                                     return AlertDialog(
                                       title: const Text('Pavilion Info'),
                                       content: const Text(
-                                          'Details about the Pavilion component.'),
+                                          'Details about the Paviliaaaon component.'),
                                       actions: [
                                         TextButton(
                                           onPressed: () {
@@ -125,12 +115,11 @@ class GroundsPage extends StatelessWidget {
                                 );
                               },
                               child: SizedBox(
-                                width: containerWidth * 0.15,
-                                height: containerHeight * 0.266,
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
                                 child: Image.asset(
-                                  'lib/assets/annexbldgbtn.png',
-                                  fit: BoxFit
-                                      .contain, 
+                                  'lib/assets/legend_earthquake.png',
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
@@ -147,7 +136,7 @@ class GroundsPage extends StatelessWidget {
 
             // Navigation buttons
             Padding(
-              padding: const EdgeInsets.only(bottom: 10), 
+              padding: const EdgeInsets.only(bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
