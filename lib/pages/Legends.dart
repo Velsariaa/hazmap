@@ -8,13 +8,7 @@ class LegendsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF292746),
-        title: Center(
-            child: Image.asset(
-            'lib/assets/hazHeader.png',
-            height: 40,
-            ),
-        ),
+        title: const Text('Legends Page'),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
@@ -86,25 +80,19 @@ class LegendsPage extends StatelessWidget {
                                     'Broken items can lead to sharp edges, spills, or other hazards depending on the nature of the object.\nEx: shattered glass, broken tools, or fractured furniture';
                                 break;
                               case 2:
-                                imagePath = 'lib/assets/laboratoryhazard.png';
+                                imagePath = 'lib/assets/brokenhazard.png';
                                 title = 'Laboratory Apparatus';
                                 description =
                                     'Laboratory equipment can pose serious risks if damaged or mishandled, such as chemical exposure or burns.\nEx: broken glassware, faulty instruments, cracked beakers';
                                 break;
                               case 3:
-                                imagePath = 'lib/assets/fallinghazard.png';
+                                imagePath = 'lib/assets/brokenhazard.png';
                                 title = 'Falling Objects';
                                 description =
                                     'Falling objects can lead to serious injury or death if not properly secured.\nEx: gasoline, solvents, and paper products';
                                 break;
-                              case 4:
-                                imagePath = 'lib/assets/flammablehazard.png';
-                                title = 'Flammable';
-                                description =
-                                    'Flammable materials can catch fire easily and spread quickly, causing serious damage or injury.\nEx: gasoline, solvents, and paper products';
-                                break;
                               case 5:
-                                imagePath = 'lib/assets/exposedelectricalhazard.png';
+                                imagePath = 'lib/assets/brokenhazard.png';
                                 title = 'Exposed Electrical Wirings';
                                 description =
                                     'Exposed wiring presents a significant risk of electric shock, fires, or electrocution if touched or damaged.\nEx: frayed wires, faulty connections';
