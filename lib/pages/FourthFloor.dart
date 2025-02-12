@@ -32,7 +32,6 @@ class FourthFloorPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-           
             Expanded(
               child: Center(
                 child: AspectRatio(
@@ -44,7 +43,6 @@ class FourthFloorPage extends StatelessWidget {
 
                       return Stack(
                         children: [
-                          
                           Positioned.fill(
                             child: Container(
                               decoration: BoxDecoration(
@@ -58,21 +56,19 @@ class FourthFloorPage extends StatelessWidget {
                               ),
                             ),
                           ),
-
+                          // Electrical Room
                           Positioned(
-                            left: containerWidth *
-                                0.19, 
-                            top: containerHeight *
-                                0.825, 
+                            left: containerWidth * 0.384,
+                            top: containerHeight * 0.898,
                             child: GestureDetector(
                               onTap: () {
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
                                     return AlertDialog(
-                                      title: const Text('Electrical Room Info'),
+                                      title: const Text('Pavilion Info'),
                                       content: const Text(
-                                          'Details about the Electrical Room component.'),
+                                          'Details about the Pavilion component.'),
                                       actions: [
                                         TextButton(
                                           onPressed: () {
@@ -86,31 +82,28 @@ class FourthFloorPage extends StatelessWidget {
                                 );
                               },
                               child: SizedBox(
-                                width: containerWidth * 0.47,
-                                height: containerHeight * 0.10,
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
                                 child: Image.asset(
-                                  'lib/assets/electricalRoom.png',
-                                  fit: BoxFit
-                                      .contain, 
+                                  'lib/assets/legend_flammable.png',
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
                           ),
-
+                          //Gen sci lab
                           Positioned(
-                            left: containerWidth *
-                                0.17, 
-                            top: containerHeight *
-                                0.684, 
+                            left: containerWidth * 0.384,
+                            top: containerHeight * 0.792,
                             child: GestureDetector(
                               onTap: () {
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
                                     return AlertDialog(
-                                      title: const Text('Gen Science Lab Info'),
+                                      title: const Text('Pavilion Info'),
                                       content: const Text(
-                                          'Details about the Gen Science Lab component.'),
+                                          'Details about the Pavilion component.'),
                                       actions: [
                                         TextButton(
                                           onPressed: () {
@@ -124,107 +117,28 @@ class FourthFloorPage extends StatelessWidget {
                                 );
                               },
                               child: SizedBox(
-                                width: containerWidth * 0.51,
-                                height: containerHeight * 0.13,
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
                                 child: Image.asset(
-                                  'lib/assets/genSciLab.png',
-                                  fit: BoxFit
-                                      .contain, 
+                                  'lib/assets/legend_labApparatus.png',
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
                           ),
-
-                            Positioned(
-                            left: containerWidth *
-                                0.17, 
-                            top: containerHeight *
-                                0.545, 
-                            child: GestureDetector(
-                              onTap: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return AlertDialog(
-                                      title: const Text('Physics Lab Info'),
-                                      content: const Text(
-                                          'Details about the Physics Lab component.'),
-                                      actions: [
-                                        TextButton(
-                                          onPressed: () {
-                                            Navigator.of(context).pop();
-                                          },
-                                          child: const Text('Close'),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                );
-                              },
-                              child: SizedBox(
-                                width: containerWidth * 0.51,
-                                height: containerHeight * 0.13,
-                                child: Image.asset(
-                                  'lib/assets/physicsLab.png',
-                                  fit: BoxFit
-                                      .contain, 
-                                ),
-                              ),
-                            ),
-                          ),
-
-                        Positioned(
-                            left: containerWidth *
-                                0.17, 
-                            top: containerHeight *
-                                0.406, 
-                            child: GestureDetector(
-                              onTap: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return AlertDialog(
-                                      title: const Text('Chemistry Lab Info'),
-                                      content: const Text(
-                                          'Details about the Chemistry Lab component.'),
-                                      actions: [
-                                        TextButton(
-                                          onPressed: () {
-                                            Navigator.of(context).pop();
-                                          },
-                                          child: const Text('Close'),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                );
-                              },
-                              child: SizedBox(
-                                width: containerWidth * 0.51,
-                                height: containerHeight * 0.13,
-                                child: Image.asset(
-                                  'lib/assets/chemistryLab.png',
-                                  fit: BoxFit
-                                      .contain, 
-                                ),
-                              ),
-                            ),
-                          ),
-
+                          //Physics Lab
                           Positioned(
-                            left: containerWidth *
-                                0.17, 
-                            top: containerHeight *
-                                0.269, 
+                            left: containerWidth * 0.384,
+                            top: containerHeight * 0.652,
                             child: GestureDetector(
                               onTap: () {
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
                                     return AlertDialog(
-                                      title: const Text('Biology Lab Info'),
+                                      title: const Text('Pavilion Info'),
                                       content: const Text(
-                                          'Details about the Biology Lab component.'),
+                                          'Details about the Pavilion component.'),
                                       actions: [
                                         TextButton(
                                           onPressed: () {
@@ -238,17 +152,154 @@ class FourthFloorPage extends StatelessWidget {
                                 );
                               },
                               child: SizedBox(
-                                width: containerWidth * 0.51,
-                                height: containerHeight * 0.13,
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
                                 child: Image.asset(
-                                  'lib/assets/bioLab.png',
-                                  fit: BoxFit
-                                      .contain, 
+                                  'lib/assets/legend_labApparatus.png',
+                                  fit: BoxFit.contain,
                                 ),
                               ),
                             ),
                           ),
-
+                          //Chem Lab
+                          Positioned(
+                            left: containerWidth * 0.384,
+                            top: containerHeight * 0.512,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
+                                child: Image.asset(
+                                  'lib/assets/legend_labApparatus.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+                          // BIO LAB
+                          Positioned(
+                            left: containerWidth * 0.384,
+                            top: containerHeight * 0.372,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
+                                child: Image.asset(
+                                  'lib/assets/legend_labApparatus.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+                          // Room 403
+                          Positioned(
+                            left: containerWidth * 0.478,
+                            top: containerHeight * 0.088,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
+                                child: Image.asset(
+                                  'lib/assets/legend_exposedwires.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: containerWidth * 0.478,
+                            top: containerHeight * 0.038,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.037,
+                                height: containerHeight * 0.027,
+                                child: Image.asset(
+                                  'lib/assets/legend_fallingobjects.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       );
                     },
@@ -261,7 +312,7 @@ class FourthFloorPage extends StatelessWidget {
 
             // Navigation buttons
             Padding(
-              padding: const EdgeInsets.only(bottom: 10), 
+              padding: const EdgeInsets.only(bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
