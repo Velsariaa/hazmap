@@ -116,6 +116,9 @@ flutter:
     - lib/assets/falling3.png  
     - lib/assets/falling4.png  
     - lib/assets/falling5.png  
+    - lib/assets/5thfloorevacplan.png  
+    - lib/assets/6thfloorevacplan.png  
+    - lib/assets/gymnasiumevacplan.png  
 
     
  
