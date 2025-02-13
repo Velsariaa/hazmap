@@ -125,6 +125,18 @@ flutter:
     - lib/assets/electrical3.png  
     - lib/assets/electrical4.png  
     - lib/assets/electrical5.png  
+    - lib/assets/labLeg.png 
+    - lib/assets/lab1.png  
+    - lib/assets/lab2.png  
+    - lib/assets/lab3.png  
+    - lib/assets/lab4.png  
+    - lib/assets/lab5.png 
+    - lib/assets/flammableLeg.png  
+    - lib/assets/flammable1.png  
+    - lib/assets/flammable2.png  
+    - lib/assets/flammable3.png  
+    - lib/assets/flammable4.png  
+    - lib/assets/flammable5.png  
 
     
  

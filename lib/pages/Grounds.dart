@@ -69,7 +69,7 @@ class GroundsPage extends StatelessWidget {
                                       title: Row(
                                         children: [
                                           Image.asset(
-                                            'lib/assets/brokenLeg.png',
+                                            'lib/assets/fallingLeg.png',
                                             width: 50,
                                             height: 50,
                                           ),
