@@ -119,6 +119,12 @@ flutter:
     - lib/assets/5thfloorevacplan.png  
     - lib/assets/6thfloorevacplan.png  
     - lib/assets/gymnasiumevacplan.png  
+    - lib/assets/electricalLeg.png  
+    - lib/assets/electrical1.png  
+    - lib/assets/electrical2.png  
+    - lib/assets/electrical3.png  
+    - lib/assets/electrical4.png  
+    - lib/assets/electrical5.png  
 
     
  
