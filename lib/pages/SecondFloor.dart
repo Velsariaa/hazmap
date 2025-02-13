@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../components/NavigationBar.dart'; 
+import '../components/NavigationBar.dart';
 import 'Home.dart';
 
 class SecondFloorPage extends StatelessWidget {
   const SecondFloorPage({super.key});
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -32,7 +32,6 @@ class SecondFloorPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-           
             Expanded(
               child: Center(
                 child: AspectRatio(
@@ -44,7 +43,6 @@ class SecondFloorPage extends StatelessWidget {
 
                       return Stack(
                         children: [
-                          
                           Positioned.fill(
                             child: Container(
                               decoration: BoxDecoration(
@@ -59,81 +57,288 @@ class SecondFloorPage extends StatelessWidget {
                             ),
                           ),
 
-                          // Positioned(
-                          //   left: containerWidth *
-                          //       0.27, 
-                          //   top: containerHeight *
-                          //       0.543, 
-                          //   child: GestureDetector(
-                          //     onTap: () {
-                          //       showDialog(
-                          //         context: context,
-                          //         builder: (BuildContext context) {
-                          //           return AlertDialog(
-                          //             title: const Text('Pavilion Info'),
-                          //             content: const Text(
-                          //                 'Details about the Pavilion component.'),
-                          //             actions: [
-                          //               TextButton(
-                          //                 onPressed: () {
-                          //                   Navigator.of(context).pop();
-                          //                 },
-                          //                 child: const Text('Close'),
-                          //               ),
-                          //             ],
-                          //           );
-                          //         },
-                          //       );
-                          //     },
-                          //     child: SizedBox(
-                          //       width: containerWidth * 0.47,
-                          //       height: containerHeight * 0.13,
-                          //       child: Image.asset(
-                          //         'lib/assets/pavillionbtn.png',
-                          //         fit: BoxFit
-                          //             .contain, 
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
+                          // Room 206
+                          Positioned(
+                            left: containerWidth * 0.39,
+                            top: containerHeight * 0.780,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_broken.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: containerWidth * 0.39,
+                            top: containerHeight * 0.700,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_exposedwires.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
 
-                          // Positioned(
-                          //   left: containerWidth *
-                          //       0.17, 
-                          //   top: containerHeight *
-                          //       0.136, 
-                          //   child: GestureDetector(
-                          //     onTap: () {
-                          //       showDialog(
-                          //         context: context,
-                          //         builder: (BuildContext context) {
-                          //           return AlertDialog(
-                          //             title: const Text('Pavilion Info'),
-                          //             content: const Text(
-                          //                 'Details about the Pavilion component.'),
-                          //             actions: [
-                          //               TextButton(
-                          //                 onPressed: () {
-                          //                   Navigator.of(context).pop();
-                          //                 },
-                          //                 child: const Text('Close'),
-                          //               ),
-                          //             ],
-                          //           );
-                          //         },
-                          //       );
-                          //     },
-                          //     child: SizedBox(
-                          //       width: containerWidth * 0.15,
-                          //       height: containerHeight * 0.266,
-                          //       child: Image.asset(
-                          //         'lib/assets/annexbldgbtn.png',
-                          //         fit: BoxFit
-                          //             .contain, 
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
+
+                          // room 204
+                          Positioned(
+                            left: containerWidth * 0.72,
+                            top: containerHeight * 0.665,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_broken.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+
+                            // Room 202
+                           Positioned(
+                            left: containerWidth * 0.72,
+                            top: containerHeight * 0.442,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_broken.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          Positioned(
+                            left: containerWidth * 0.72,
+                            top: containerHeight * 0.370,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_exposedwires.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          Positioned(
+                            left: containerWidth * 0.65,
+                            top: containerHeight * 0.270,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_exposedwires.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          Positioned(
+                            left: containerWidth * 0.72,
+                            top: containerHeight * 0.329,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_broken.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: containerWidth * 0.72,
+                            top: containerHeight * 0.257,
+                            child: GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      title: const Text('Pavilion Info'),
+                                      content: const Text(
+                                          'Details about the Pavilion component.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          child: const Text('Close'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: SizedBox(
+                                width: containerWidth * 0.053,
+                                height: containerHeight * 0.043,
+                                child: Image.asset(
+                                  'lib/assets/legend_exposedwires.png',
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          ),
+
                         ],
                       );
                     },
@@ -146,7 +351,7 @@ class SecondFloorPage extends StatelessWidget {
 
             // Navigation buttons
             Padding(
-              padding: const EdgeInsets.only(bottom: 10), 
+              padding: const EdgeInsets.only(bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

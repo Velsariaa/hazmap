@@ -75,6 +75,7 @@ flutter:
     - lib/assets/gymnasium.jpg
     - lib/assets/groundsevacplan.png
     - lib/assets/1stfloorevacplan.png 
+    - lib/assets/3rdfloorevacplan.png 
     - lib/assets/pavillion.png 
     - lib/assets/pavillionbtn.png 
     - lib/assets/pavillionbtn2.png 
@@ -97,6 +98,24 @@ flutter:
     - lib/assets/legend_flammable.png 
     - lib/assets/legend_broken.png 
     - lib/assets/legend_labApparatus.png 
+    - lib/assets/earthquakeLeg.png 
+    - lib/assets/dropCoverHold.png 
+    - lib/assets/earth2.png 
+    - lib/assets/earth3.png 
+    - lib/assets/earth4.png 
+    - lib/assets/earth5.png 
+    - lib/assets/brokenLeg.png 
+    - lib/assets/broken1.png 
+    - lib/assets/broken2.png 
+    - lib/assets/broken3.png 
+    - lib/assets/broken4.png
+    - lib/assets/broken5.png  
+    - lib/assets/fallingLeg.png  
+    - lib/assets/falling1.png  
+    - lib/assets/falling2.png  
+    - lib/assets/falling3.png  
+    - lib/assets/falling4.png  
+    - lib/assets/falling5.png  
 
     
  
