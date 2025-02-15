@@ -50,6 +50,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF292746),
+        iconTheme: const IconThemeData(color: Colors.white),
          title: Center(
             child: Image.asset(
             'lib/assets/hazHeader.png',

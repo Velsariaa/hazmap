@@ -9,7 +9,14 @@ class FourthFloorPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('4th Floor'),
+        backgroundColor: const Color(0xFF292746),
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: Center(
+            child: Image.asset(
+            'lib/assets/hazHeader.png',
+            height: 40,
+            ),
+        ),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(

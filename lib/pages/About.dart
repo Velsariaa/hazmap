@@ -9,11 +9,12 @@ class AboutPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF292746),
-         title: Center(
-          child: Image.asset(
-            'lib/assets/hazLogo.png',
+        iconTheme: const IconThemeData(color: Colors.white), // Set menu icon to white
+        title: Center(
+            child: Image.asset(
+            'lib/assets/hazHeader.png',
             height: 40,
-          ),
+            ),
         ),
         leading: Builder(
           builder: (BuildContext context) {
@@ -34,33 +35,35 @@ class AboutPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Container(
-          width: MediaQuery.of(context).size.width * 0.95,
-          height: MediaQuery.of(context).size.height * 0.95,
-          decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 226, 226, 226).withOpacity(0.27),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Image.asset('lib/assets/abtpagetext.png'),
-                ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.47,
-                  child: Container(
-                    color: const Color(0xFFE6E6E6),
-                    child: const Center(
-                      child: Padding(
-                        padding: EdgeInsets.all(12.0),
+        child: Center(
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.95,
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(255, 226, 226, 226).withOpacity(0.27),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Image.asset('lib/assets/abtpagetext.png'),
+                  ),
+                  const SizedBox(height: 20), // Added spacing
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(12.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFE6E6E6),
+                        borderRadius: BorderRadius.circular(8), // Added border radius
+                      ),
+                      child: const Center(
                         child: Text(
                           'HazMap is a hazard mapping application that is intended to provide Pasig City Science High School (PCSHS) students with a virtual map directory of hazards within the school campus. The app offers valuable benefits by providing them with quick access to up-to-date disaster preparedness information to contribute to a safer school environment.',
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 18, // Reduced font size for better readability
                             color: Color(0xFF292746),
                           ),
                           textAlign: TextAlign.justify,
@@ -68,8 +71,8 @@ class AboutPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
