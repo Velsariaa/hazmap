@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../components/NavigationBar.dart'; 
 import 'Home.dart';
+import 'SecondFloor.dart';
+import 'FourthFloor.dart';
 
 
 class ThirdFloorPage extends StatelessWidget {
@@ -1897,7 +1899,7 @@ class ThirdFloorPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomePage()),
+                            builder: (context) => const SecondFloorPage()),
                       );
                     },
                   ),
@@ -1908,7 +1910,7 @@ class ThirdFloorPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomePage()),
+                            builder: (context) => const FourthFloorPage()),
                       );
                     },
                   ),
