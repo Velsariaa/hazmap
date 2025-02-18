@@ -52,7 +52,7 @@ class AboutPage extends StatelessWidget {
                     child: Image.asset('lib/assets/abtpagetext.png'),
                   ),
                   const SizedBox(height: 20), // Added spacing
-                  Expanded(
+                  Align(
                     child: Container(
                       padding: const EdgeInsets.all(12.0),
                       decoration: BoxDecoration(
