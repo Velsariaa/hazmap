@@ -72,12 +72,12 @@ class HomePage extends StatelessWidget {
       body: Container(
   decoration: const BoxDecoration(
     image: DecorationImage(
-      image: AssetImage('lib/assets/mainPageBg.jpg'),
+      image: AssetImage('lib/assets/legendbg.png'),
       fit: BoxFit.cover,
     ),
   ),
   child: Container(
-    color: Colors.white.withOpacity(0.6), // Full-page white opacity
+    color: Colors.white.withOpacity(0), // Full-page white opacity
     child: Center(
       child: SizedBox(
         width: 400, // Adjust width as needed
