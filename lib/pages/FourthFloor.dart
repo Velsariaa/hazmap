@@ -1310,35 +1310,52 @@ class FourthFloorPage extends StatelessWidget {
             const SizedBox(height: 10),
 
             // Navigation buttons
-            Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.arrow_left, size: 40),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ThirdFloorPage()),
-                      );
-                    },
-                  ),
-                  const SizedBox(width: 50),
-                  IconButton(
-                    icon: const Icon(Icons.arrow_right, size: 40),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const FifthFloorPage()),
-                      );
-                    },
-                  ),
-                ],
-              ),
+            // Navigation buttons
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.arrow_left, size: 40),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        transitionDuration: const Duration(milliseconds: 500),
+                        pageBuilder: (context, animation, secondaryAnimation) => const ThirdFloorPage(),
+                        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                          return FadeTransition(
+                            opacity: animation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(width: 50),
+                IconButton(
+                  icon: const Icon(Icons.arrow_right, size: 40),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        transitionDuration: const Duration(milliseconds: 500),
+                        pageBuilder: (context, animation, secondaryAnimation) => const FifthFloorPage(),
+                        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                          return FadeTransition(
+                            opacity: animation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ],
             ),
+          ),
           ],
         ),
       ),
