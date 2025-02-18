@@ -159,7 +159,7 @@ class LegendsPage extends StatelessWidget {
                                   Expanded(
                                     child: Text(
                                       description,
-                                      style: const TextStyle(fontSize: 12),
+                                      style: const TextStyle(fontSize: 11.5),
                                       textAlign: TextAlign.justify,
                                     ),
                                   ),
