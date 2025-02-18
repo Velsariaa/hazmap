@@ -763,7 +763,7 @@ class FifthFloorPage extends StatelessWidget {
                                       ),
                                       content: SingleChildScrollView(
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment: CrossAxisAlignment.start, // Keep content aligned left
                                           children: [
                                             const Text.rich(
                                               TextSpan(
@@ -779,7 +779,6 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-
                                             const SizedBox(height: 10),
                                             const Text.rich(
                                               TextSpan(
@@ -795,14 +794,13 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-                                            
                                             const SizedBox(height: 12),
                                             const Text(
                                               'What to do:',
                                               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                                             ),
                                             const SizedBox(height: 8),
-                                            _safetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.', isLarge: true),
+                                            _centeredSafetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.'),
                                             _safetyTip('lib/assets/earth2.png', 'Stay away from windows, shelves, or anything that might fall.'),
                                             _safetyTip('lib/assets/earth3.png', 'If you’re outside, move to an open space away from buildings, trees, and power lines.'),
                                             _safetyTip('lib/assets/earth4.png', 'Once the shaking stops, check for safety, evacuate if needed, and follow emergency instructions.'),
@@ -1429,7 +1427,7 @@ class FifthFloorPage extends StatelessWidget {
                                       ),
                                       content: SingleChildScrollView(
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment: CrossAxisAlignment.start, // Keep content aligned left
                                           children: [
                                             const Text.rich(
                                               TextSpan(
@@ -1445,7 +1443,6 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-
                                             const SizedBox(height: 10),
                                             const Text.rich(
                                               TextSpan(
@@ -1461,14 +1458,13 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-                                            
                                             const SizedBox(height: 12),
                                             const Text(
                                               'What to do:',
                                               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                                             ),
                                             const SizedBox(height: 8),
-                                            _safetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.', isLarge: true),
+                                            _centeredSafetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.'),
                                             _safetyTip('lib/assets/earth2.png', 'Stay away from windows, shelves, or anything that might fall.'),
                                             _safetyTip('lib/assets/earth3.png', 'If you’re outside, move to an open space away from buildings, trees, and power lines.'),
                                             _safetyTip('lib/assets/earth4.png', 'Once the shaking stops, check for safety, evacuate if needed, and follow emergency instructions.'),
@@ -2192,7 +2188,7 @@ class FifthFloorPage extends StatelessWidget {
                                       ),
                                       content: SingleChildScrollView(
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment: CrossAxisAlignment.start, // Keep content aligned left
                                           children: [
                                             const Text.rich(
                                               TextSpan(
@@ -2208,7 +2204,6 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-
                                             const SizedBox(height: 10),
                                             const Text.rich(
                                               TextSpan(
@@ -2224,14 +2219,13 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-                                            
                                             const SizedBox(height: 12),
                                             const Text(
                                               'What to do:',
                                               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                                             ),
                                             const SizedBox(height: 8),
-                                            _safetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.', isLarge: true),
+                                            _centeredSafetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.'),
                                             _safetyTip('lib/assets/earth2.png', 'Stay away from windows, shelves, or anything that might fall.'),
                                             _safetyTip('lib/assets/earth3.png', 'If you’re outside, move to an open space away from buildings, trees, and power lines.'),
                                             _safetyTip('lib/assets/earth4.png', 'Once the shaking stops, check for safety, evacuate if needed, and follow emergency instructions.'),
@@ -3048,7 +3042,7 @@ class FifthFloorPage extends StatelessWidget {
                                       ),
                                       content: SingleChildScrollView(
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment: CrossAxisAlignment.start, // Keep content aligned left
                                           children: [
                                             const Text.rich(
                                               TextSpan(
@@ -3064,7 +3058,6 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-
                                             const SizedBox(height: 10),
                                             const Text.rich(
                                               TextSpan(
@@ -3080,14 +3073,13 @@ class FifthFloorPage extends StatelessWidget {
                                               ),
                                               style: TextStyle(fontSize: 16),
                                             ),
-                                            
                                             const SizedBox(height: 12),
                                             const Text(
                                               'What to do:',
                                               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                                             ),
                                             const SizedBox(height: 8),
-                                            _safetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.', isLarge: true),
+                                            _centeredSafetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.'),
                                             _safetyTip('lib/assets/earth2.png', 'Stay away from windows, shelves, or anything that might fall.'),
                                             _safetyTip('lib/assets/earth3.png', 'If you’re outside, move to an open space away from buildings, trees, and power lines.'),
                                             _safetyTip('lib/assets/earth4.png', 'Once the shaking stops, check for safety, evacuate if needed, and follow emergency instructions.'),
@@ -3354,7 +3346,7 @@ class FifthFloorPage extends StatelessWidget {
     );
   }
 
-  Widget _safetyTip(String imagePath, String text, {bool isLarge = false}) {
+  Widget _safetyTip(String imagePath, String text) {
   return Padding(
     padding: const EdgeInsets.symmetric(vertical: 6),
     child: Row(
@@ -3362,8 +3354,8 @@ class FifthFloorPage extends StatelessWidget {
       children: [
         Image.asset(
           imagePath,
-          width: isLarge ? 155 : 55, // Make the Drop, Cover, and Hold image 3x larger
-          height: isLarge ? 90 : 55,  // Adjust height proportionally
+          width: 55,
+          height: 55,
           fit: BoxFit.contain,
         ),
         const SizedBox(width: 15), // Add space between image and text
@@ -3372,6 +3364,30 @@ class FifthFloorPage extends StatelessWidget {
             text,
             style: const TextStyle(fontSize: 14),
           ),
+        ),
+      ],
+    ),
+  );
+}
+
+Widget _centeredSafetyTip(String imagePath, String text) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 6),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Image.asset(
+          imagePath,
+          width: 155,
+          height: 90,
+          fit: BoxFit.contain,
+        ),
+        const SizedBox(height: 8),
+        Text(
+          text,
+          style: const TextStyle(fontSize: 14),
+          textAlign: TextAlign.center,
         ),
       ],
     ),
