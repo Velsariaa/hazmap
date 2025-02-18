@@ -138,7 +138,7 @@ class LegendsPage extends StatelessWidget {
                                           child: Text(
                                             title,
                                             style: const TextStyle(
-                                              fontSize: 15,
+                                              fontSize: 13.5,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),

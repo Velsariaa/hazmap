@@ -45,10 +45,11 @@ class AboutPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center, // Center vertically
+                crossAxisAlignment: CrossAxisAlignment.center, // Center horizontally
                 children: [
                   Align(
-                    alignment: Alignment.topLeft,
+                    alignment: Alignment.center,
                     child: Image.asset('lib/assets/abtpagetext.png'),
                   ),
                   const SizedBox(height: 20), // Added spacing
