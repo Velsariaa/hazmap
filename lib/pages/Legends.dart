@@ -98,6 +98,12 @@ class LegendsPage extends StatelessWidget {
                                 description =
                                     'Falling objects can lead to serious injury or death if not properly secured.\nEx: gasoline, solvents, and paper products';
                                 break;
+                              case 4:
+                                imagePath = 'lib/assets/flammablehazard.png';
+                                title = 'Flammable';
+                                description =
+                                    'Flammable materials can catch fire easily and spread quickly, causing serious damage or injury.\nEx: gasoline, solvents, and paper products';
+                                break;
                               case 5:
                                 imagePath = 'lib/assets/exposedelectricalhazard.png';
                                 title = 'Exposed Electrical Wirings';
