@@ -11,10 +11,13 @@ class AboutPage extends StatelessWidget {
         backgroundColor: const Color(0xFF292746),
         iconTheme: const IconThemeData(color: Colors.white), // Set menu icon to white
         title: Center(
+          child: Transform.translate(
+            offset: Offset(-35, 0), // Moves the image 10 pixels to the left
             child: Image.asset(
-            'lib/assets/hazHeader.png',
-            height: 40,
+              'lib/assets/hazHeader.png',
+              height: 40,
             ),
+          ),
         ),
         leading: Builder(
           builder: (BuildContext context) {

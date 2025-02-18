@@ -31,10 +31,13 @@ class _LandingPageState extends State<LandingPage> {
         backgroundColor: const Color(0xFF292746),
         iconTheme: const IconThemeData(color: Colors.white),
         title: Center(
+          child: Transform.translate(
+            offset: Offset(-35, 0), // Moves the image 10 pixels to the left
             child: Image.asset(
-            'lib/assets/hazHeader.png',
-            height: 40,
+              'lib/assets/hazHeader.png',
+              height: 40,
             ),
+          ),
         ),
         leading: Builder(
           builder: (BuildContext context) {
@@ -79,7 +82,8 @@ class _LandingPageState extends State<LandingPage> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 40, vertical: 20),
                         ),
                         child: const Text(
                           'Get Started',

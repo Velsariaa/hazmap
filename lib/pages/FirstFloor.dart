@@ -14,10 +14,13 @@ class FirstFloorPage extends StatelessWidget {
         backgroundColor: const Color(0xFF292746),
         iconTheme: const IconThemeData(color: Colors.white),
         title: Center(
+          child: Transform.translate(
+            offset: Offset(-35, 0), // Moves the image 10 pixels to the left
             child: Image.asset(
-            'lib/assets/hazHeader.png',
-            height: 40,
+              'lib/assets/hazHeader.png',
+              height: 40,
             ),
+          ),
         ),
         leading: Builder(
           builder: (BuildContext context) {
@@ -165,15 +168,17 @@ class FirstFloorPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 500),
-                        pageBuilder: (context, animation, secondaryAnimation) => const GroundsPage(),
+                        pageBuilder: (context, animation, secondaryAnimation) => GroundsPage(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: animation,
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: Offset(-1.0, 0.0), // Slide from left
+                              end: Offset.zero,
+                            ).animate(animation),
                             child: child,
                           );
                         },
-                      ),
+                      )
                     );
                   },
                 ),
@@ -184,15 +189,17 @@ class FirstFloorPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 500),
-                        pageBuilder: (context, animation, secondaryAnimation) => const SecondFloorPage(),
+                        pageBuilder: (context, animation, secondaryAnimation) => SecondFloorPage(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: animation,
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: Offset(1.0, 0.0), // Slide from right
+                              end: Offset.zero,
+                            ).animate(animation),
                             child: child,
                           );
                         },
-                      ),
+                      )
                     );
                   },
                 ),
