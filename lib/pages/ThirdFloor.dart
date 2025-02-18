@@ -1903,15 +1903,17 @@ class ThirdFloorPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 500),
-                        pageBuilder: (context, animation, secondaryAnimation) => const SecondFloorPage(),
+                        pageBuilder: (context, animation, secondaryAnimation) => SecondFloorPage(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: animation,
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: Offset(-1.0, 0.0), // Slide from left
+                              end: Offset.zero,
+                            ).animate(animation),
                             child: child,
                           );
                         },
-                      ),
+                      )
                     );
                   },
                 ),
@@ -1922,15 +1924,17 @@ class ThirdFloorPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 500),
-                        pageBuilder: (context, animation, secondaryAnimation) => const FourthFloorPage(),
+                        pageBuilder: (context, animation, secondaryAnimation) => FourthFloorPage(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: animation,
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: Offset(1.0, 0.0), // Slide from right
+                              end: Offset.zero,
+                            ).animate(animation),
                             child: child,
                           );
                         },
-                      ),
+                      )
                     );
                   },
                 ),

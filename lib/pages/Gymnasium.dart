@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hazmap/pages/Grounds.dart';
 import '../components/NavigationBar.dart'; 
 import 'Home.dart'; 
 import 'SixthFloor.dart'; 
@@ -168,15 +169,17 @@ class GymnasiumPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 500),
-                        pageBuilder: (context, animation, secondaryAnimation) => const SixthFloorPage(),
+                        pageBuilder: (context, animation, secondaryAnimation) => SixthFloorPage(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: animation,
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: Offset(-1.0, 0.0), // Slide from left
+                              end: Offset.zero,
+                            ).animate(animation),
                             child: child,
                           );
                         },
-                      ),
+                      )
                     );
                   },
                 ),
@@ -187,15 +190,17 @@ class GymnasiumPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 500),
-                        pageBuilder: (context, animation, secondaryAnimation) => const HomePage(),
+                        pageBuilder: (context, animation, secondaryAnimation) => GroundsPage(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: animation,
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: Offset(1.0, 0.0), // Slide from right
+                              end: Offset.zero,
+                            ).animate(animation),
                             child: child,
                           );
                         },
-                      ),
+                      )
                     );
                   },
                 ),
