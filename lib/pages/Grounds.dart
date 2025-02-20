@@ -97,6 +97,7 @@ class GroundsPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -105,6 +106,7 @@ class GroundsPage extends StatelessWidget {
                                                   ),
                                                   TextSpan(
                                                     text: ' pose a hazard when items are dropped or displaced from elevated positions. These objects can cause injuries or damage depending on their size and height. The risk is common in areas with high shelving, scaffolding, or overhead storage.',
+                                                    
                                                   ),
                                                 ],
                                               ),
@@ -113,6 +115,7 @@ class GroundsPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -192,6 +195,7 @@ class GroundsPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start, // Keep content aligned left
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -207,6 +211,7 @@ class GroundsPage extends StatelessWidget {
                                             ),
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -285,6 +290,7 @@ class GroundsPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -301,6 +307,7 @@ class GroundsPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -380,6 +387,7 @@ class GroundsPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start, // Keep content aligned left
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -395,6 +403,7 @@ class GroundsPage extends StatelessWidget {
                                             ),
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -473,6 +482,7 @@ class GroundsPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -489,6 +499,7 @@ class GroundsPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(

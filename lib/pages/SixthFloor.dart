@@ -98,7 +98,7 @@ class SixthFloorPage extends StatelessWidget {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -114,7 +114,7 @@ class SixthFloorPage extends StatelessWidget {
                                             ),
 
                                             const SizedBox(height: 10),
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -192,7 +192,7 @@ class SixthFloorPage extends StatelessWidget {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -208,7 +208,7 @@ class SixthFloorPage extends StatelessWidget {
                                             ),
 
                                             const SizedBox(height: 10),
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -288,7 +288,7 @@ class SixthFloorPage extends StatelessWidget {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -304,7 +304,7 @@ class SixthFloorPage extends StatelessWidget {
                                             ),
 
                                             const SizedBox(height: 10),
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -382,7 +382,7 @@ class SixthFloorPage extends StatelessWidget {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -398,7 +398,7 @@ class SixthFloorPage extends StatelessWidget {
                                             ),
 
                                             const SizedBox(height: 10),
-                                            const Text.rich(
+                                            const Text.rich(textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(

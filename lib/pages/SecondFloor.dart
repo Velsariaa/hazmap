@@ -98,6 +98,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -114,6 +115,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -192,6 +194,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -208,6 +211,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -289,6 +293,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -305,6 +310,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -384,6 +390,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -400,6 +407,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -479,6 +487,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -495,6 +504,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -574,6 +584,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -590,6 +601,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -669,6 +681,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -685,6 +698,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -763,6 +777,7 @@ class SecondFloorPage extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
@@ -779,6 +794,7 @@ class SecondFloorPage extends StatelessWidget {
 
                                             const SizedBox(height: 10),
                                             const Text.rich(
+                                              textAlign: TextAlign.justify,
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
