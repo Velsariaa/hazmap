@@ -182,7 +182,7 @@ class SecondFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Electrical Wirings',
+                                            'Electrical \nWirings',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -469,7 +469,7 @@ class SecondFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Electrical Wirings',
+                                            'Electrical \nWirings',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -564,7 +564,7 @@ class SecondFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Electrical Wirings',
+                                            'Electrical \nWirings',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -753,7 +753,7 @@ class SecondFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Electrical Wirings',
+                                            'Electrical \nWirings',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],

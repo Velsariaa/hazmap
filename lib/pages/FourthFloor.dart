@@ -183,7 +183,7 @@ class FourthFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Laboratory Equipment',
+                                            'Laboratory \nEquipment',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -278,7 +278,7 @@ class FourthFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Laboratory Equipment',
+                                            'Laboratory \nEquipment',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -373,7 +373,7 @@ class FourthFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Laboratory Equipment',
+                                            'Laboratory \nEquipment',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -468,7 +468,7 @@ class FourthFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Laboratory Equipment',
+                                            'Laboratory \nEquipment',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -563,7 +563,7 @@ class FourthFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Electrical Wirings',
+                                            'Electrical \nWirings',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -1036,7 +1036,7 @@ class FourthFloorPage extends StatelessWidget {
                                           ),
                                           const SizedBox(width: 10),
                                           const Text(
-                                            'Electrical Wirings',
+                                            'Electrical \nWirings',
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                         ],
