@@ -1969,6 +1969,7 @@ class ThirdFloorPage extends StatelessWidget {
         Expanded(
           child: Text(
             text,
+            textAlign: TextAlign.justify,
             style: const TextStyle(fontSize: 14),
           ),
         ),

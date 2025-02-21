@@ -230,7 +230,6 @@ class GroundsPage extends StatelessWidget {
                                               'What to do:',
                                               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                                             ),
-                                            const SizedBox(height: 8),
                                             _centeredSafetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.'),
                                             _safetyTip('lib/assets/earth2.png', 'Stay away from windows, shelves, or anything that might fall.'),
                                             _safetyTip('lib/assets/earth3.png', 'If you’re outside, move to an open space away from buildings, trees, and power lines.'),
@@ -422,7 +421,6 @@ class GroundsPage extends StatelessWidget {
                                               'What to do:',
                                               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                                             ),
-                                            const SizedBox(height: 8),
                                             _centeredSafetyTip('lib/assets/dropCoverHold.png', 'Drop, Cover, and Hold under a sturdy table or desk.'),
                                             _safetyTip('lib/assets/earth2.png', 'Stay away from windows, shelves, or anything that might fall.'),
                                             _safetyTip('lib/assets/earth3.png', 'If you’re outside, move to an open space away from buildings, trees, and power lines.'),
@@ -634,6 +632,7 @@ class GroundsPage extends StatelessWidget {
         Expanded(
           child: Text(
             text,
+            textAlign: TextAlign.justify,
             style: const TextStyle(fontSize: 14),
           ),
         ),
@@ -655,7 +654,6 @@ Widget _centeredSafetyTip(String imagePath, String text) {
           height: 90,
           fit: BoxFit.contain,
         ),
-        const SizedBox(height: 8),
         Text(
           text,
           style: const TextStyle(fontSize: 14),
