@@ -643,7 +643,7 @@ class GroundsPage extends StatelessWidget {
 
 Widget _centeredSafetyTip(String imagePath, String text) {
   return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 6),
+    padding: const EdgeInsets.symmetric(vertical: 0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
