@@ -651,7 +651,6 @@ Widget _centeredSafetyTip(String imagePath, String text) {
         Image.asset(
           imagePath,
           width: 155,
-          height: 90,
           fit: BoxFit.contain,
         ),
         Text(
